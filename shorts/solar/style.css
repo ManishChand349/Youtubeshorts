@@ -1,0 +1,45 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+     background-color: #000;
+}
+.content{
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: block;
+}
+.sun{
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     background-color: #f1ca47;
+     border: 3px solid #f1ca47;
+}
+.shadow{
+     height: 170px;
+     width: 170px;
+     border-radius: 50%;
+     background-color: #000;
+     top: -5px;
+     left: 0px;
+     animation: move 10s infinite 1.5s;
+}
+@keyframes move {
+     0%{
+          transform: translateX(150px);
+          background-color: #000;
+     }
+      50%{
+          transform: translateX(-10px);
+          background-color: #000;
+     }
+     100%{
+          transform: translateX(-170px);
+          background-color: #000;
+     } 
+}
